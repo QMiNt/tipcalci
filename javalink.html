@@ -13,7 +13,7 @@
 <body>
     <div class="blc1">
         <div class="wrapper"><label class="label" for="Bill">Bill : </label>
-            <input type="number" id="bill_i" value="100.00">
+            <input type="number" id="bill_i" class="inp" value="100.00">
         </div>
         <div class="wrapper"><label for="Tip Percentage" class="label">Tip % :</label>
             <div>
@@ -25,22 +25,22 @@
         <div class="wrapper">
             <label for="No Of Person" class="label">Number Of Persons :</label>
             <div>
-                <input type="range" value="3" min="1" max="20" class="slider" id="nopi"
+                <input type="range" value="3" min="1" max="20" class="slider"  id="nopi"
                     oninput="this.nextElementSibling.value = this.value">
-                <output class="o-nop">3</output>
+                <output class="o-nop">3</output><span>Pr.</span>
             </div>
         </div>
         <div class="wrapper butt">
             <button class="butt" onclick="calc()">Calculate Tip</button>
         </div>
         <div class="wrapper"><label for="tpp" class="label">Tip per Person : </label>
-            <input type="text" id="otpp" disabled>
+            <input type="text" class="inp" id="otpp" readonly="readonly">
         </div>
         <div class="wrapper"> <label for="tpp" class="label">Total Tip : </label>
-            <input type="text" id="otip" disabled>
+            <input type="text" class="inp" id="otip" readonly="readonly" >
         </div>
         <div class="wrapper"><label for="tpp" class="label">Total Bill : </label>
-            <input type="text" id="totbil" disabled>
+            <input type="text" class="inp" id="totbil" readonly="readonly">
         </div>
     </div>
 
