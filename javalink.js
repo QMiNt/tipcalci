@@ -1,4 +1,4 @@
-const { parse } = require("postcss");
+document.getElementById("q").addEventListener("click",calc);
 
 function calc()
 {
@@ -11,4 +11,3 @@ function calc()
     document.getElementById("otpp").value=d/c;
     document.getElementById("totbil").value= e;
 }
-
